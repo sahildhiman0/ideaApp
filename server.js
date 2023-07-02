@@ -3,6 +3,8 @@ const express = require('express');
 
 const app = express();
 
-app.listen(3333,()=>{
+const config = require('./configs/server.config')
+
+app.listen(config.PORT,()=>{
     console.log("server has started");
 })
